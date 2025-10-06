@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-formulario">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-formulario">
+        <section class="formulario-animado">
+            <h1> ☆ 𝐎𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐝𝐚𝐝𝐞𝐬 ☆ </h1>
+            <p class="frase-formulario">Venha participar desse ramo comigo!</p>
+            
+            <div class="form-container">
+                <input type="checkbox" id="switch">
+                
+                <!-- Formulário de Contato -->
+                <div class="sign-up-container">
+                    <form class="sign-up-form" action="#" method="post">
+                        <div class="form-title">Enviar Mensagem</div>
+                        
+                        <label for="nome-contato">Seu Nome</label>
+                        <input type="text" id="nome-contato" name="nome" required>
+                        
+                        <label for="email-contato">Seu E-mail</label>
+                        <input type="email" id="email-contato" name="email" required>
+                        
+                        <label for="assunto-contato">Assunto</label>
+                        <select id="assunto-contato" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="trabalho">Trabalho</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        
+                        <label for="mensagem-contato">Mensagem</label>
+                        <textarea id="mensagem-contato" name="mensagem" rows="3" required></textarea>
+                        
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                    
+                    <label for="switch" class="switch-label">Já tem uma conta? Fazer Login</label>
+                </div>
+
+                <!-- Formulário de Login -->
+                <div class="log-in-container">
+                    <form class="log-in-form" action="#" method="post">
+                        <div class="form-title">Acessar Conta</div>
+                        
+                        <label for="email-login">E-mail</label>
+                        <input type="email" id="email-login" name="email" required>
+                        
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <div class="forgot-pwd">Esqueceu a senha?</div>
+                        
+                        <button type="submit">Entrar</button>
+                    </form>
+                    
+                    <label for="switch" class="switch-label">Não tem conta? Cadastrar</label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Portfólio</p>
+    </footer>
+</body>
+</html>
+</html>
